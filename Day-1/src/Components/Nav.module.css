@@ -35,3 +35,8 @@
     border: 2px solid red; 
   }
 
+  .box{
+    width: 300px;
+    height: 40px;
+    background-color: darkblue;
+  }

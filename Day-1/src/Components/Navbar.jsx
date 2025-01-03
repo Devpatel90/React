@@ -1,5 +1,5 @@
 import styles from "./Nav.module.css"
-
+ 
 function Nav(){
     return (
         <div>
@@ -19,7 +19,9 @@ function Nav(){
                 </div>
 
                 <div className={styles.sea}>
+                    <input type="text" className={styles.box} placeholder="Search for products, brands and more"></input>
                     <input type="text" placeholder="Search for products, brands and more"></input>
+
                 </div>
 
             </div>
