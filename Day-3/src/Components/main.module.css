@@ -1,0 +1,21 @@
+.main{
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.b1{
+    width: 500px;
+    height: 100%;
+    border:1px solid black;
+    background-color: #2874F0;
+}
+
+.log{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

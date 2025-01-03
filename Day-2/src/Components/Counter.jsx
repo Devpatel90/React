@@ -15,6 +15,7 @@ function Counter(){
         <div>
             <button onClick={handleDec}>-</button>
             <h2>{state}</h2>
+            <Counter2 dev = {state}/>
             <button onClick={handleInc}>+</button>
         </div>
     )

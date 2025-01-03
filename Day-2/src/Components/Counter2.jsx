@@ -4,7 +4,7 @@ function Counter2(props) {
   return (
     <div>
       <h1>
-        <Counter2 ></Counter2>
+        {props.dev}
       </h1>
     </div>
   )
