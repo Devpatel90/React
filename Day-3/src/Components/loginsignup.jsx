@@ -3,32 +3,15 @@ import styles from "./main.module.css"
 
 function Login(){
 
-    const [state,setState] = useState(true)
+    const [state,setState] = useState(true);
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
+    const [password,setPass] = useState("");
     return (
 
         <div className={styles.main}>
             <div className={styles.ama}> <img src="10002.png" alt="" className={styles.lo} /> </div>
-            {/* <div className={styles.b1}>
-                <div><h2 className="text-light mt-5">Login</h2></div>
-                <div><p className="text-light mt-5">Get access to your Orders, Wishlist and Recommendations</p></div>
-                <div className={styles.logo}><img src="10001.png" alt="" /></div>
-            </div>
-            { state == true ? 
-            <div id="login" className={styles.log}>
-                <h1>Login</h1>
-                <input type="text" name="" id="" placeholder="Enter Email Address"/><br /><br />
-                <input type="password" name="" id="" placeholder="Enter Password" /><br /><br />
-                <input type="submit" name="" id="" />
-                <p onClick={()=>{setState(false)}}>New to Flipkart ? Create an Account</p>
-            </div> :
-            <div id="signup" className={styles.log}>
-                <h1>Signup</h1>
-                <input type="text" name="" id="" placeholder="Enter Username"/><br /><br />
-                <input type="text" name="" id="" placeholder="Enter Email Address"/><br /><br />
-                <input type="password" name="" id="" placeholder="Enter Password" /><br /><br />
-                <input type="submit" name="" id="" />
-                <p onClick={()=>{setState(true)}}>Existing User ? Log In</p>
-            </div>} */}
+            
         { state == true ?
         <div className={styles.container1}>
             <h3 class="mb-4 text-center">Sign in</h3>
@@ -57,19 +40,19 @@ function Login(){
             <form>          
                 <div class="mb-3">
                     <label for="name" class="form-label" className={styles.lab}>Your name</label>
-                    <input type="text" class="form-control" id="name" placeholder="First and last name" required></input>
+                    <input type="text" class="form-control" value={name} placeholder="First and last name" required></input>
                 </div>
             
                 <div class="mb-3">
-                    <label for="mobile" class="form-label" className={styles.lab}>Mobile number</label>
+                    <label for="mobile" class="form-label" className={styles.lab}>Email Address</label>
                     <div class="input-group">
-                        <input type="tel" class="form-control" id="mobile" placeholder="Mobile number" required></input>
+                        <input type="tel" class="form-control" value={email} placeholder="Email Address" required></input>
                     </div>
                  </div>
 
                 <div class="mb-3">
                     <label for="password" class="form-label" className={styles.lab}>Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="At least 6 characters" required></input>
+                    <input type="password" class="form-control" value={password} placeholder="At least 6 characters" required></input>
                     <div class="form-text text-info info-text">Passwords must be at least 6 characters.</div>
                 </div>
 
