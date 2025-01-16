@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Products from "./Products";
+import "./Form.css"
 
 function Form(props)
 {
@@ -28,18 +29,29 @@ function Form(props)
     return (
         <>
     {res == true ?
-        <div>
-            <h1>Form</h1>
-            <form action="">
-                <label htmlFor="">Product Name</label><br />
-                <input type="text" placeholder="Enter Product Name" name="" id="" onChange={(el)=>{setName(el.target.value)}} /><br /><br />
-                <label htmlFor="">Image</label><br />
-                <input type="text" name="" placeholder="Enter Image URL" id="" onChange={(el)=>{setImg(el.target.value)}} /><br /><br />
-                <label htmlFor="">Product Price</label><br />
-                <input type="text" name="" placeholder="Enter Product Price" id="" onChange={(el)=>{setPrice(el.target.value)}} /><br /><br />
-                <input type="button" onClick={handleAdd} name="" value="Add Product" id="" />
-            </form>
-        </div>
+    
+    <div className="form-container">
+        <h1>Product Form</h1>
+        <form>
+            <div className="form-group">
+                <label>Product Name</label>
+                <input type="text" id="productName" placeholder="Enter Product Name" onChange={(el)=>{setName(el.target.value)}} />
+            </div>
+
+            <div className="form-group">
+                <label>Image URL</label>
+                <input type="text" id="productImage" placeholder="Enter Image URL" onChange={(el)=>{setImg(el.target.value)}} />
+            </div>
+
+            <div className="form-group">
+                <label>Product Price</label>
+                <input type="text" id="productPrice" placeholder="Enter Product Price" onChange={(el)=>{setPrice(el.target.value)}} />
+            </div>
+
+            <button type="button" onClick={handleAdd}>Add Product</button>
+        </form>
+    </div>
+
         :
         <Products dev1 = {pdata}/>
     }
