@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Counter2 from "./Counter2"
+import sty from  "./Counter.module.css"
 
 function Counter(){
     let [state,setState] = useState(0)
@@ -12,11 +13,11 @@ function Counter(){
         setState(state+1)
     }
     return (
-        <div>
-            <button onClick={handleDec}>-</button>
-            <h2>{state}</h2>
-            <Counter2 dev = {state}/>
-            <button onClick={handleInc}>+</button>
+        <div className={sty.counter1}>
+            <button className={sty.counter2} onClick={handleDec}>-</button>
+            <h1 className={sty.counter3}>{state}</h1>
+            <Counter2 dev={state} />
+            <button className={sty.counter2} onClick={handleInc}>+</button>
         </div>
     )
 }
