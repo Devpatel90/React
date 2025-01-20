@@ -1,0 +1,174 @@
+.headers
+{
+    /* background-color: black; */
+    color: black;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading
+{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.form_data
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    padding: 20px;
+}
+
+.box
+{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 30px;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.prod_img
+{
+    width: 100%;
+}
+
+.form_data {
+    background-color: #f9f9f9; /* Light background for better contrast */
+    border: 1px solid #ccc; /* Subtle border for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .form_data label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Dark color for labels */
+    margin-bottom: 8px;
+  }
+  
+  .form_data input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form_data input[type="text"]:focus {
+    border-color: #007bff; /* Primary color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+    outline: none;
+  }
+  
+  .form_data .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .form_data input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .form_data input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .form_data input[type="submit"]:active {
+    transform: scale(1); /* Return to normal on click */
+  }
+   
+
+
+
+
+
+ 
+
+
+  /* Container for the product list */
+.product1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product2 {
+    font-size: 2rem; /* Larger font for the title */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Grid for displaying product cards */
+  .product3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  /* Styling for individual product cards */
+  .product4 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;    
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product image styling */
+  .product4 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ensures the image fits within the container */
+  }
+  
+  /* Product title styling */
+  .product5{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Price details styling */
+  .product6 {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .product-card-price .price-label {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
