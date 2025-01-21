@@ -1,33 +1,59 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import sty from './App.module.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [state,setState] = useState({
+      name : "",
+      email : "",
+      skill : [""]
+  })
+
+  const handleadd = ()=>{
+    setState({
+     ...state,
+     skill : [...state.skill,""]
+    })
+ }
+
+ const handleDelete = (index) => {
+  const updatedSkills = state.skill.filter((_, i) => i !== index); // Remove the skill at the given index
+  setState({ ...state, skill: updatedSkills }); // Update the state
+};
+
+ const handleChange = (e)=>{
+   const {name,value} = e.target
+   if(isNaN(name)){
+   setState({...state,[name] : value})
+   }else{
+      let arr = [...state.skill]
+      arr[name] = value
+      setState({...state,skill : arr})
+   }
+ }
+
+ console.log(state);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className={sty.form1}>
+        <form action="">
+          <input type="text" placeholder='Name' name="name"  onChange={handleChange} className={sty.inputf} /><br /><br />  
+          <input type="text" name="email" id="" placeholder='Email' onChange={handleChange} className={sty.inputf} /><br /><br />
+          <input type="button" name="" value={"Add-Skill"} onClick={handleadd} id="" className={sty.addb} /><br/><br/>
+          <div className={sty.skillli}>
+          {
+          state.skill.map((el,index)=>{
+            return <>
+            <div className={sty.skillit}>
+                <input  type='text' name={index} placeholder='Skills' onChange={handleChange}/>
+                <input type="button" value={"Delete"} className={sty.deleteb} onClick={() => handleDelete(index)} /><br/><br/>
+            </div>
+          </>
+          })
+        }
+        </div>
+        </form>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
