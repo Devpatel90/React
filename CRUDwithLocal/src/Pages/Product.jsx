@@ -35,24 +35,6 @@ function Product() {
         })}
       </div>
     </div>
-
-
-
-
-
-
-    // <div>
-    //     {
-    //         state.map((el)=>{
-    //             return <>
-    //                    <img src={el.img} /><br />
-    //                    <p>{el.title} - {el.price}</p>
-    //                    <button onClick={()=>handleDelete(el.id)}>Delete</button>
-    //                    <button>Edit</button><br />
-    //             </>
-    //         })
-    //     }
-    // </div>
   )
 }
 

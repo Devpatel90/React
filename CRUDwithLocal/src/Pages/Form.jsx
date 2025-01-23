@@ -54,17 +54,6 @@ function Form() {
         </form>
       </div>
     </div>
-
-
-
-    // <div>
-    //     <form onSubmit={handleSubmit}>
-    //          <input type="text" value={state.title} name='title' placeholder='Title' onChange={handleChange}/>
-    //          <input type="text" name='img' value={state.img} placeholder='Image' onChange={handleChange}/>
-    //          <input type="text" name='price' value={state.price} placeholder='Price' onChange={handleChange}/>
-    //          <input type="submit" />
-    //     </form>
-    // </div>
   )
 }
 
