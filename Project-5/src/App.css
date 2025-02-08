@@ -1,0 +1,12 @@
+#rem{
+  width: 300px;
+  border: 1px solid black;
+  height: 450px;
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: inset;
+}
+
+#rem img{
+  width: 100%;
+}
