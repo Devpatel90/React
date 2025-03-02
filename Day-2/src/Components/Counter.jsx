@@ -16,7 +16,8 @@ function Counter(){
         <div className={sty.counter1}>
             <button className={sty.counter2} onClick={handleDec}>-</button>
             <h1 className={sty.counter3}>{state}</h1>
-            <Counter2 dev={state} />
+            <Counter2 dev={state} /> 
+            {/* hi */}
             <button className={sty.counter2} onClick={handleInc}>+</button>
         </div>
     )
