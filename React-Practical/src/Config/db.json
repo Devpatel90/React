@@ -1,0 +1,40 @@
+{
+  "students": [
+    {
+      "id": "2c7d",
+      "name": "Dev",
+      "rollNumber": "1",
+      "class": "10"
+    },
+    {
+      "id": "6803",
+      "name": "Het",
+      "rollNumber": "45",
+      "class": "8"
+    },
+    {
+      "id": "491d",
+      "name": "Yash",
+      "rollNumber": "13",
+      "class": "5"
+    },
+    {
+      "id": "0f9a",
+      "name": "Ronak",
+      "rollNumber": "7",
+      "class": "2"
+    },
+    {
+      "id": "30c8",
+      "name": "Manav",
+      "rollNumber": "68",
+      "class": "9"
+    },
+    {
+      "id": "bd25",
+      "name": "Yashesh",
+      "rollNumber": "50",
+      "class": "1"
+    }
+  ]
+}
